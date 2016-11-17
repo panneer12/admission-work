@@ -4,6 +4,7 @@ from django.db import models
 
 
 class BroadInsightsConditions(models.Model):
+    unique_id = models.CharField(max_length=10)
     rule_id = models.IntegerField()
     sub_rule_id = models.CharField(max_length=10)
     subject = models.CharField(max_length=10)
@@ -21,4 +22,4 @@ class BroadInsightsConditions(models.Model):
     insight = models.CharField(max_length=500)
 
     def __str__(self):
-        return "Rule ID"+str(self.rule_id)+" Sub Rule ID"+str(self.sub_rule_id)
+        return str(self.unique_id)+" Rule ID"+str(self.rule_id)
