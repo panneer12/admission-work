@@ -1,0 +1,20 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="bool.sum" />
+          <option value="bool.iloc" />
+          <option value="type.score" />
+          <option value="type.time_spent" />
+          <option value="type.questions" />
+          <option value="type.aid" />
+          <option value="type.topic" />
+          <option value="plotly.graph_objs.*" />
+          <option value="type.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
