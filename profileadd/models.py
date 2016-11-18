@@ -17,6 +17,7 @@ class BroadInsightsConditions(models.Model):
     mt_25196 = models.IntegerField(null=True)
     mt_26007= models.IntegerField(null=True)
     mt_27905 = models.IntegerField(null=True)
+    mt_27955 = models.IntegerField(null=True)
     mt_28065 = models.IntegerField(null=True)
     condition_data = models.CharField(max_length=1000)
     insight = models.CharField(max_length=500)
