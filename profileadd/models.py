@@ -1,4 +1,5 @@
 from django.db import models
+from simple_history.models import HistoricalRecords
 
 # Create your models here.
 
@@ -22,5 +23,15 @@ class BroadInsightsConditions(models.Model):
     condition_data = models.CharField(max_length=1000)
     insight = models.CharField(max_length=500)
 
+    history = HistoricalRecords()
+
     def __str__(self):
         return str(self.unique_id)+" Rule ID"+str(self.rule_id)
+
+
+class Result(models.Model):
+    index = models.PositiveIntegerField()
+    user_name = models.PositiveIntegerField()
+    dt_score = models.PositiveIntegerField()
+    mt_score = models.PositiveIntegerField()
+
